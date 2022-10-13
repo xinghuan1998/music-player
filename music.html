@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="music.js"></script>
+    <link rel="stylesheet" type="text/css" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+
+    <div class="volume-control-panel"> <!--font awesome图标库  音量键-->
+        <i class="fa fa-volume-up fa-lg"></i>
+        <div id="volume-bar" class="volume-bar">
+            <div id="volume-control" class="pro-control" style="bottom:0"></div>
+        </div>
+    </div>
+
+
+    <div class="music-detail"><!--font awesome图标库  播放详情页-->
+        <div class="heder-detail">
+
+            <div class="dcol" id="back" style="height:60px;width:50px;line-height: 60px;text-align: center;"><i
+                    class="fa fa-chevron-down fa-lg"></i></div>
+            <div class="dcol" style="margin: auto;height: 60px;position: absolute;left:50%;transform: translate(-50%);">
+                <div class="det-title title" style="line-height: 35px;"></div>
+                <div class="retbutton actor" style="line-height: 25px; text-align: center;"></div>
+            </div>
+        </div>
+        <div class="mid-detail" style="text-align:center;">
+            <div id="shownimg">
+                <img class="cover spinner" style="width:100%;height:100%;"
+                    src="https://c-ssl.duitang.com/uploads/item/202005/15/20200515000325_hqpkb.jpg" alt="" \>
+            </div>
+
+
+            <div class="excircle"></div>
+        </div>
+        <div class="bottom-detail">
+            <div class="pla1" style="text-align:center;">
+                <span><i class="fa fa-heart-o fa-lg"></i></span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+            </div>
+            <div class="progress">
+                <div class="pro-bar" id="pro-bar">
+                    <div class="pro-control" id="pro-control"></div>
+                </div>
+
+            </div>
+            <div class="control">
+                <div><i class="fa fa-random fa-2x"></i></div>
+                <div class="backward-button"><i class="fa fa-step-backward fa-2x"></i></div>
+                <div class="play-button">
+                    <div
+                        style=" border-radius: 50%;border: 2px solid; width:60px;height: 60px;top:44%;left:49%;position: absolute;transform: translate(-50%,-50%);">
+
+                    </div><i class="fa fa-play fa-2x"></i>
+                </div>
+                <div class="forward-button"><i class="fa fa-step-forward fa-2x"></i></div>
+                <div class="volume-button">
+                    <i class="fa fa-volume-up fa-2x"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <audio src="" id="main_audio" preload="auto"></audio>
+    <div class="header">音乐列表
+
+    </div>
+    <div class="body-content">
+        <div class="music-list">
+            <!--<div class="item">
+                <div class="col" style="width:50px;text-align: center;line-height:43px">1</div>
+                <div class="col" style="width:calc(100% - 110px);">
+                    <div class="song">导向</div>
+                    <div class="act">zjielun</div>
+                </div>
+                <div class="col" style="width:50px;line-height:43px">pla</div>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="music-bar"><!-- 页面底部 播放控制按钮-->
+        <div style="width:50px ;height:60px;float:left;position:relative;padding-left: 0px;margin-top: -10px;">
+            <img src="https://c-ssl.duitang.com/uploads/item/202005/15/20200515000325_hqpkb.jpg" class="cover spinner"
+                id="cover">
+        </div>r
+
+        <div class='pmusic-bar' style="width:calc(100% - 130px);float:left;height:60px;padding-left: 20px;">
+
+            <span id="title" class="title"></span>
+            <span style="font-size:10px;color:#cecbcb">- <span id="actor" class="actor"></span></span>
+        </div>
+        <div class="play-button" style="width:50px;float:left"><i class="fa fa-play fa-2x"></i></div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+.header {
+    height: 50px;
+    background-color: rgba(129, 129, 129, 0.251);
+    color: aliceblue;
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.music-bar {
+    height: 60px;
+    background-color: rgba(86, 86, 86, 0.215);
+    color: aliceblue;
+    line-height: 60px;
+    padding-left: 14px;
+}
+
+.body-content {
+    height: calc(100% - 110px);
+    overflow: auto;
+    ;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    background: linear-gradient(rgb(143, 161, 251), rgb(179, 143, 251), rgb(240, 157, 181));
+}
+
+.item {
+    color: rgb(234, 234, 234);
+
+    height: 49px;
+    border-bottom: 1px rgb(146, 146, 146) solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+}
+
+.col {
+    float: left;
+
+}
+
+.dcol {
+    display: inline-block;
+}
+
+#cover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 8px #a06f83 solid;
+
+}
+
+.music-detail {
+    background: linear-gradient(rgb(143, 161, 251), rgb(179, 143, 251), rgb(240, 157, 181));
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    transition: top 0.4s;
+}
+
+.heder-detail {
+    position: relative;
+    height: 80px;
+}
+
+#shownimg {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 40px;
+    border-color: rgba(0, 0, 0, 0.701);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.mid-detail {
+    position: relative;
+    height: calc(100% - 280px);
+}
+
+.excircle {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgba(226, 217, 235, 0.432);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.bottom-detail {
+    height: 200px;
+}
+
+.control {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.pla1 {
+    height: 60px;
+}
+
+.progress {
+    height: 40px;
+
+}
+
+.control>div {
+    display: inline-block;
+    width: 18%;
+    height: 100%;
+    text-align: center;
+
+    position: relative;
+}
+
+.pro-bar {
+    width: 90%;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.553);
+    text-align: center;
+    margin: auto;
+    border-radius: 2px;
+    position: relative;
+}
+
+.pro-control {
+    border-radius: 50%;
+    background-color: aliceblue;
+    height: 15px;
+    width: 15px;
+    border: 2px rgb(183, 183, 183) solid;
+    transform: translate(-25%, -25%);
+    box-shadow: 0px 0px 10px white;
+    position: absolute;
+
+}
+
+.volume-control-panel {
+    width: 20px;
+    height: 250px;
+
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    z-index: 1999;
+    display: none;
+    background: rgba(255, 255, 255, 0.285);
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.482);
+    border-radius: 5px;
+}
+
+.volume-bar {
+    width: 8px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.553);
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.volume-turn {
+    width: 20px;
+
+    background-color: rgba(240, 248, 255, 0.727);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    animation: spin 10s linear infinite;
+}
+
